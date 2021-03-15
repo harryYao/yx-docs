@@ -6,6 +6,7 @@
     "doc:dev": "npx vuepress dev docs",
     "doc:build": "npx vuepress build docs",
     "doc:deploy": "npx gh-pages -d docs/dist",
+    "deploy": "npx gh-pages -d docs/dist",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"

@@ -25,6 +25,13 @@ module.exports = {
         children: [
           'css基础/01_选择器',
         ]
+      },
+      {
+        title: '博客文章',
+        collapsable: false,
+        children: [
+          'articles/window.name',
+        ]
       }
     ],
     // sidebarDepth: 3 // 左侧导航的深度默认是2级
