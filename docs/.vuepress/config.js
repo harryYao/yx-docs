@@ -17,6 +17,7 @@ module.exports = {
         children: [ // 下级列表
           'js基础/01_js类型',
           'js基础/02_dom操作',
+          'js基础/03_原型原型链'
         ]
       },
       {
