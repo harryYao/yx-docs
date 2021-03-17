@@ -8,8 +8,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="/yx-docs/favicon.ico">
     <meta name="description" content="yaoxin的笔记文档">
     
-    <link rel="preload" href="/yx-docs/assets/css/0.styles.9a4ca8c0.css" as="style"><link rel="preload" href="/yx-docs/assets/js/app.2a0e8db7.js" as="script"><link rel="preload" href="/yx-docs/assets/js/2.0d19cfa1.js" as="script"><link rel="preload" href="/yx-docs/assets/js/10.18714e14.js" as="script"><link rel="prefetch" href="/yx-docs/assets/js/11.7945497b.js"><link rel="prefetch" href="/yx-docs/assets/js/12.aaef83a4.js"><link rel="prefetch" href="/yx-docs/assets/js/13.91d96097.js"><link rel="prefetch" href="/yx-docs/assets/js/14.612e5a7e.js"><link rel="prefetch" href="/yx-docs/assets/js/3.ae68de17.js"><link rel="prefetch" href="/yx-docs/assets/js/4.04feb3f1.js"><link rel="prefetch" href="/yx-docs/assets/js/5.f27f6877.js"><link rel="prefetch" href="/yx-docs/assets/js/6.f8bc49fe.js"><link rel="prefetch" href="/yx-docs/assets/js/7.92386821.js"><link rel="prefetch" href="/yx-docs/assets/js/8.b55f1019.js"><link rel="prefetch" href="/yx-docs/assets/js/9.8ac2aa85.js">
-    <link rel="stylesheet" href="/yx-docs/assets/css/0.styles.9a4ca8c0.css">
+    <link rel="preload" href="/yx-docs/assets/css/0.styles.286ce47e.css" as="style"><link rel="preload" href="/yx-docs/assets/js/app.c8278505.js" as="script"><link rel="preload" href="/yx-docs/assets/js/2.0d19cfa1.js" as="script"><link rel="preload" href="/yx-docs/assets/js/10.5ddaca71.js" as="script"><link rel="prefetch" href="/yx-docs/assets/js/11.fd42e61c.js"><link rel="prefetch" href="/yx-docs/assets/js/12.08790312.js"><link rel="prefetch" href="/yx-docs/assets/js/13.3d20514e.js"><link rel="prefetch" href="/yx-docs/assets/js/14.6032f0bb.js"><link rel="prefetch" href="/yx-docs/assets/js/3.ae68de17.js"><link rel="prefetch" href="/yx-docs/assets/js/4.1a516d1f.js"><link rel="prefetch" href="/yx-docs/assets/js/5.f7245a63.js"><link rel="prefetch" href="/yx-docs/assets/js/6.f8bc49fe.js"><link rel="prefetch" href="/yx-docs/assets/js/7.635fddf8.js"><link rel="prefetch" href="/yx-docs/assets/js/8.b37ccdb1.js"><link rel="prefetch" href="/yx-docs/assets/js/9.5ff86838.js">
+    <link rel="stylesheet" href="/yx-docs/assets/css/0.styles.286ce47e.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/yx-docs/" class="home-link router-link-active"><img src="/yx-docs/logo.png" alt="前端小记" class="logo"> <span class="site-name can-hide">前端小记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/harryYao" target="_blank" rel="noopener noreferrer" class="nav-link external">
@@ -21,11 +21,42 @@
 string类型有些特殊，因为字符串具有可变的大小，所以显然它不能被直接存储在具有固定大小的变量中。由于效率的原因，我们希望JS只复制对字符串的引用，而不是字符串的内容。但是另一方面，字符串在许多方面都和基本类型的表现相似，而字符串是不可变的这一事实（即没法改变一个字符串值的内容），因此可以将字符串看成行为与基本类型相似的不可变引用类型</p> <p>Boolean、Number、String 这三个是Javascript中的基本包装类型，也就是这三个其实是一个构造函数，他们是Function的实例，是引用类型，至于这里的String与以上说的String是同名，是因为其实上文说的String是指字符串，这里的String指的是String这个构造函数，上面那么写，是为了更好的理解，因为Javascript是松散类型的。我们可以看下String实例化的例子：</p> <div class="language- extra-class"><pre class="language-text"><code>alert(typeof new String(&quot;jwy&quot;));//&quot;object&quot;
 var author = &quot;Tom&quot;;
 alert(typeof name);//&quot;string&quot;
-</code></pre></div><h2 id="es6-新增的基本类型"><a href="#es6-新增的基本类型" class="header-anchor">#</a> ES6 新增的基本类型</h2> <h3 id="symbol"><a href="#symbol" class="header-anchor">#</a> Symbol</h3> <h3 id="set"><a href="#set" class="header-anchor">#</a> Set</h3></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/yx-docs/js基础/02_dom操作.html">
+</code></pre></div><h3 id="undefined"><a href="#undefined" class="header-anchor">#</a> undefined</h3> <p>变量声明了但是没赋值 解析器会给一个默认值 就是undefined</p> <div class="language- extra-class"><pre class="language-text"><code>var a;
+if (a === undefined) {
+  console.log('a is undefined')
+} else {
+  console.log('a is not defined')
+}
+
+typeof a; // undefined
+</code></pre></div><ol><li>变量没赋值</li> <li>数组中某项没赋值</li> <li>函数的参数没赋值</li> <li>函数没有返回值</li> <li>对象某个属性没有赋值
+以上情况都为undefined.</li></ol> <h3 id="null"><a href="#null" class="header-anchor">#</a> Null</h3> <p>本质上就是一个特殊值，表示“没有”</p> <div class="language- extra-class"><pre class="language-text"><code>var a = null;
+typeof a; // object
+</code></pre></div><blockquote><p>只把它当作object的一种特殊值，为了兼容以前的代码，后来就没法修改了。
+这并不是说null就属于对象</p></blockquote> <blockquote><p>2015年, ES6草案时，也曾将 null 的数据类型修改为了 null, 但是因为兼容性问题，后来又改回了object；</p></blockquote> <ul><li>获取一个不存在的对象时，值为null,如获取一个不存在的DOM对象</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var d = document.getElementById('shdyfajfasf');
+d; // null
+</code></pre></div><ul><li>null是一个表示”无”的对象，转为数值时为0；</li> <li>undefined是一个表示”无”的原始值，转为数值时为NaN</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var n = Number(null);
+n; // 0
+var m = Number(undefined);
+m; // NaN
+</code></pre></div><h3 id="boolean"><a href="#boolean" class="header-anchor">#</a> boolean</h3> <p>使用Boolean(value)方法可以强制转换任意值为boolean类型,除了以下六个值，其他都是自动转为true：</p> <div class="language- extra-class"><pre class="language-text"><code>Boolean(undefined) // false
+Boolean(null) // false
+Boolean(-0) // false
+Boolean(0) // false
+Boolean(NaN) // false
+Boolean('') // false
+</code></pre></div><p>所有对象的布尔值都是true，甚至连false对应的布尔对象也是true。
+请注意，空对象{}和空数组[]也会被转成true。</p> <div class="language- extra-class"><pre class="language-text"><code>Boolean(new Boolean(false))// Boolean对象会转成true
+Boolean([]) // 空数组会转成true
+Boolean({}) // 空对象会转成true
+</code></pre></div><p>&amp;&amp; 表达式从第一个开始,遇到值为false的表达式,则返回表达式本身,否则返回最后一个表达式</p> <div class="language- extra-class"><pre class="language-text"><code>var obj = new Boolean(false);
+console.log(obj &amp;&amp; true);//true
+console.log(true &amp;&amp; obj);//Boolean {false}
+</code></pre></div><p>因此,第二个console实际上打印的是obj对象的值</p> <h2 id="es6-新增的基本类型"><a href="#es6-新增的基本类型" class="header-anchor">#</a> ES6 新增的基本类型</h2> <h3 id="symbol"><a href="#symbol" class="header-anchor">#</a> Symbol</h3> <h3 id="set"><a href="#set" class="header-anchor">#</a> Set</h3></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/yx-docs/js基础/02_dom操作.html">
         DOM操作
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/yx-docs/assets/js/app.2a0e8db7.js" defer></script><script src="/yx-docs/assets/js/2.0d19cfa1.js" defer></script><script src="/yx-docs/assets/js/10.18714e14.js" defer></script>
+    <script src="/yx-docs/assets/js/app.c8278505.js" defer></script><script src="/yx-docs/assets/js/2.0d19cfa1.js" defer></script><script src="/yx-docs/assets/js/10.5ddaca71.js" defer></script>
   </body>
 </html>
