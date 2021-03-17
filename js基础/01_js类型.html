@@ -8,8 +8,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="/yx-docs/favicon.ico">
     <meta name="description" content="yaoxin的笔记文档">
     
-    <link rel="preload" href="/yx-docs/assets/css/0.styles.9a4ca8c0.css" as="style"><link rel="preload" href="/yx-docs/assets/js/app.5493b503.js" as="script"><link rel="preload" href="/yx-docs/assets/js/2.0d19cfa1.js" as="script"><link rel="preload" href="/yx-docs/assets/js/10.ec16a0a5.js" as="script"><link rel="prefetch" href="/yx-docs/assets/js/11.fd42e61c.js"><link rel="prefetch" href="/yx-docs/assets/js/12.1f87a062.js"><link rel="prefetch" href="/yx-docs/assets/js/13.91d96097.js"><link rel="prefetch" href="/yx-docs/assets/js/14.24779539.js"><link rel="prefetch" href="/yx-docs/assets/js/3.ae68de17.js"><link rel="prefetch" href="/yx-docs/assets/js/4.04feb3f1.js"><link rel="prefetch" href="/yx-docs/assets/js/5.f27f6877.js"><link rel="prefetch" href="/yx-docs/assets/js/6.f8bc49fe.js"><link rel="prefetch" href="/yx-docs/assets/js/7.92386821.js"><link rel="prefetch" href="/yx-docs/assets/js/8.66b4bf0d.js"><link rel="prefetch" href="/yx-docs/assets/js/9.b010df85.js">
-    <link rel="stylesheet" href="/yx-docs/assets/css/0.styles.9a4ca8c0.css">
+    <link rel="preload" href="/yx-docs/assets/css/0.styles.c6effad8.css" as="style"><link rel="preload" href="/yx-docs/assets/js/app.4031df9c.js" as="script"><link rel="preload" href="/yx-docs/assets/js/2.9b395b71.js" as="script"><link rel="preload" href="/yx-docs/assets/js/10.1be5c65c.js" as="script"><link rel="prefetch" href="/yx-docs/assets/js/11.737a4974.js"><link rel="prefetch" href="/yx-docs/assets/js/12.70fe77d2.js"><link rel="prefetch" href="/yx-docs/assets/js/13.91d96097.js"><link rel="prefetch" href="/yx-docs/assets/js/14.e755fdb9.js"><link rel="prefetch" href="/yx-docs/assets/js/3.8cbfaf02.js"><link rel="prefetch" href="/yx-docs/assets/js/4.be8d499e.js"><link rel="prefetch" href="/yx-docs/assets/js/5.6a2a39da.js"><link rel="prefetch" href="/yx-docs/assets/js/6.f8bc49fe.js"><link rel="prefetch" href="/yx-docs/assets/js/7.92386821.js"><link rel="prefetch" href="/yx-docs/assets/js/8.340c5645.js"><link rel="prefetch" href="/yx-docs/assets/js/9.77f10bc4.js">
+    <link rel="stylesheet" href="/yx-docs/assets/css/0.styles.c6effad8.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/yx-docs/" class="home-link router-link-active"><img src="/yx-docs/logo.png" alt="前端小记" class="logo"> <span class="site-name can-hide">前端小记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/harryYao" target="_blank" rel="noopener noreferrer" class="nav-link external">
@@ -52,7 +52,43 @@ Boolean({}) // 空对象会转成true
 </code></pre></div><p>&amp;&amp; 表达式从第一个开始,遇到值为false的表达式,则返回表达式本身,否则返回最后一个表达式</p> <div class="language- extra-class"><pre class="language-text"><code>var obj = new Boolean(false);
 console.log(obj &amp;&amp; true);//true
 console.log(true &amp;&amp; obj);//Boolean {false}
-</code></pre></div><p>因此,第二个console实际上打印的是obj对象的值</p> <h3 id="es6-新增的基本类型"><a href="#es6-新增的基本类型" class="header-anchor">#</a> ES6 新增的基本类型</h3> <h3 id="symbol"><a href="#symbol" class="header-anchor">#</a> Symbol</h3> <p>ES6新加入了一种原始数据类型Symbol，表示独一无二的值</p> <div class="language- extra-class"><pre class="language-text"><code>let s = Symbol();
+</code></pre></div><p>因此,第二个console实际上打印的是obj对象的值</p> <h3 id="string"><a href="#string" class="header-anchor">#</a> String</h3> <h3 id="number"><a href="#number" class="header-anchor">#</a> Number</h3> <h4 id="nan"><a href="#nan" class="header-anchor">#</a> NaN</h4> <p>不是一个数，但是属于数值类型, NaN和任何数操作都为NaN, 和任何值都不相等，包括他本身</p> <div class="language- extra-class"><pre class="language-text"><code>typeof NaN; // number
+NaN === NaN; // false
+</code></pre></div><ul><li>isNaN 函数来判断是否是NaN</li></ul> <div class="language- extra-class"><pre class="language-text"><code>console.log( isNaN(NaN ) // true 
+console.log( isNaN(10 ) // false
+console.log( isNaN('10') // false
+console.log( isNaN('blue') // true
+console.log(isNaN( true )) // false (true会被转换成1)
+</code></pre></div><h4 id="数值转换"><a href="#数值转换" class="header-anchor">#</a> 数值转换</h4> <p>把非数值值转换为数值</p> <ul><li>Number()</li> <li>parseInt() 取整, 将一个字符串转换成x进制的整数。</li> <li>parseFloat() 浮点数</li></ul> <div class="language- extra-class"><pre class="language-text"><code>Number(true) // 1
+Number(false) // 0
+Number(null) // 0
+Number('') // 0
+Number(' ') // 0
+Number(undefined) // NaN
+Number([]) // 0
+Number([2]) // 2
+Number([2, 3]) // NaN
+Number(0xf) // 15 
+
+parseInt(&quot;123abc&quot;) // 123
+parseInt(&quot;&quot;) // NaN
+parseInt(&quot;12.5px&quot;) // 12
+parseInt(&quot;0xA&quot;) // 10 (16进制)
+parseInt(&quot;0xf&quot;) // 15 (16进制)
+parseInt(&quot;070&quot;) // 70
+parseInt(&quot;70&quot;) // 70
+
+parseFloat(&quot;3.14&quot;) // 3.14
+parseFloat(&quot;-3.14&quot;) //-3.14
+parseFloat(&quot;+3.14&quot;) //3.14
+parseFloat(&quot;0003.14&quot;) // 3.14
+parseFloat(&quot; 3.14 &quot;) // 3.14
+parseFloat(&quot;3.14abc&quot;) // 3.14
+parseFloat(&quot;3.14.5678&quot;) // 3.14
+parseFloat(&quot;abc3.14&quot;) // NaN
+parseFloat(&quot;abc123&quot;) // NaN
+parseFloat(&quot;123abc&quot;) // 123
+</code></pre></div><p>为什么Number和parseInt/parseFloat计算结果不一样呢？</p> <ul><li>Number转换规则是浏览器底层渲染规则，是浏览器的一个非常重要的方法，parseInt/parseFloat是一个单独方法的规则，就是用来处理字符串的。</li> <li>Number走的是最底层的机制，遇到其他类型，底层机制会告诉我们哪个类型跟哪个类型应该怎么转换，这是底层机制已经规定好的，比如遇到布尔值，true转为1，false转为0</li> <li>parseInt和parseFloat是额外提供的方法，就是浏览器提供的方法，它们的源码处理机制很简单，会先把传入的参数转换为字符串，然后在从左到右查找数字有效字符。</li></ul> <h3 id="es6-新增的基本类型"><a href="#es6-新增的基本类型" class="header-anchor">#</a> ES6 新增的基本类型</h3> <h3 id="symbol"><a href="#symbol" class="header-anchor">#</a> Symbol</h3> <p>ES6新加入了一种原始数据类型Symbol，表示独一无二的值</p> <div class="language- extra-class"><pre class="language-text"><code>let s = Symbol();
 typeof s; // &quot;symbol&quot;
 </code></pre></div><p>Symbol函数前不能使用new命令，否则会报错。这是因为生成的Symbol是一个原始类型的值，不是对象，所以不能添加属性。基本上，它是一种类似于字符串的原始数据类型。</p> <div class="language- extra-class"><pre class="language-text"><code>var s1 = Symbol(&quot;foo&quot;);
 var s2 = Symbol(&quot;foo&quot;);
@@ -100,6 +136,6 @@ Symbol.keyFor(s2) // undefined
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/yx-docs/assets/js/app.5493b503.js" defer></script><script src="/yx-docs/assets/js/2.0d19cfa1.js" defer></script><script src="/yx-docs/assets/js/10.ec16a0a5.js" defer></script>
+    <script src="/yx-docs/assets/js/app.4031df9c.js" defer></script><script src="/yx-docs/assets/js/2.9b395b71.js" defer></script><script src="/yx-docs/assets/js/10.1be5c65c.js" defer></script>
   </body>
 </html>
