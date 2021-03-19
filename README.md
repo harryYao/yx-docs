@@ -15,7 +15,7 @@ npm install -D vuepress
 # 启动文档项目
 npx vuepress dev docs
 
-```
+```json
 "scripts": {
   "doc:dev": "vuepress dev docs",
   "doc:build": "vuepress build docs",
