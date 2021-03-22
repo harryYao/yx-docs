@@ -195,3 +195,86 @@ v-bind和v-on, 可以实现解决上述问题
 </script>
 ```
 
+## 5. 监听函数的生命周期函数
+有时, 需要在父组件监听子组件挂载后mounted, 做一些逻辑处理.
+例如:
+加载远端组件时, 想抓取组件从远端加载到挂载的耗时.
+此时, 就不能用常规的写法, 在每个子组件中去this.$emit事件了.
+有没有办法, 只需要在父组件中监听各子组件的生命周期钩子函数呢?
+
+@hook可以监听到子组件的生命周期钩子函数(created, updated等等).
+例如: @hook:mounted="doSomething"
+
+```vue
+// Parent.vue
+<template>
+  <Child v-bind="$props" v-on="$listeners" @hook:mounted="doSomething"> </Child>
+</template>
+ 
+<script>
+  import Child from "./Child";
+  export default {
+    props: {
+      title: {
+        required: true,
+        type: String
+      }
+    }
+    components: {
+      Child
+    },
+    methods: {
+      doSomething(){
+        console.log("child component has mounted!");
+      }
+    }
+  };
+</script>
+
+```
+
+## 6. 函数式组件
+
+* tip 函数式组件, 无状态，无法实例化，内部没有任何生命周期处理方法，非常轻量，因而渲染性能高，特别适合用来只依赖外部数据传递而变化的组件。
+* 写法如下：
+
++ 在template标签里面标明functional
++ 只接受props值
++ 不需要script标签
+
+```vue
+<!-- App.vue -->
+<template>
+  <div>
+    <UserList :users="users" :click-handler="clickHandler.bind(this)"></UserList>
+  </div>
+</template>
+ 
+<script>
+import UserList from "./UserList";
+ 
+export default {
+  name: "App",
+  data: () => {
+    users: ['james', 'ian']
+  }
+  components: { UserList },
+  methods: {
+    clickHandler(name){
+      console.log(`clicked: ${name}`);
+    }    
+  }
+};
+</script>
+```
+
+```vue
+// UserList.vue
+<template functional>
+  <div>
+    <p v-for="(name, idx) in props.users" @click="props.clickHandler(name)" :key="idx">
+      {{ name }}
+    </p>
+  </div>
+</template>
+```
