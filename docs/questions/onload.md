@@ -1,0 +1,1 @@
+window.onload() & document.ready() 事件先后顺序
