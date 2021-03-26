@@ -18,7 +18,7 @@
 
 客户端发送一个HTTP请求到服务器的请求消息包括以下格式：   
 请求行（request line）、请求头部（header）、空行和请求数据四个部分组成。   
-<img :src="$withBase('/imgs/http_request.png')" alt="foo" />
+<img :src="$withBase('/imgs/http_request.jpg')" alt="foo" />
 
 #### Get 请求
 ``` yaml
