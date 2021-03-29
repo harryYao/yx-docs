@@ -52,12 +52,20 @@ idle,prepare:仅在内部使用
 * poll:最重要的阶段,执行pending callback,在适当的情况下会阻塞在这个阶段
 * check: 执行setImmediate的callback
 * close callback: 执行close事件的callback
-
-
 * process.nextTick:在当前执行栈尾部,下一次Event Loop之前触发回调函数,它指定的任务总是发生在所有异步任务之前(process.nextTick > Promise)
 * setImmediate:在当前任务队列尾部添加事件,指定的任务总是在下一次Event Loop时执行.(setImmediate > setTimeout)
 
 多个process.nextTick总是在当前执行栈一次执行完,多个setImmediate可能需要多次loop才能执行完成.
+
+
+Event Loop
+
+> * 所有的同步任务都在主线程中执行,形成一个执行栈(当函数开始执行,形成一个执行上下文,推入执行栈)
+> * 主线程之外有一个“任务队列”,只要异步任务有了运行结果,就在“任务队列”中放置一个事件
+> * 一旦执行栈中的所有同步任务执行完毕,系统就会读取“任务队列”,看看有哪些事件,那么对应的异步任务,结束等待状态,进入执行栈,开始执行
+> * 主线程不断重复以上三个步骤
+
+以上当主线程空了就去读取“任务队列”的事件这个循环的运行机制,就是<b>Event Loop</b>.
 
 
 ### 宏任务和微任务
