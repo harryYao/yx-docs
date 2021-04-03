@@ -42,6 +42,14 @@ module.exports = {
           'questions/Event Loop是什么',
           'questions/输入URL回车后的过程',
           'questions/onload',
+          'questions/会话技术',
+          'questions/XSS CSRF 点击劫持攻击'
+        ]
+      }, 
+      {
+        title: 'Vue',
+        collapsable: false,
+        children: [
           'vue/vue技巧大全'
         ]
       }
