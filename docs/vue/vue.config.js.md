@@ -1,5 +1,7 @@
 // https://github.com/staven630/vue-cli4-config
 
+// 官方文档
+// https://cli.vuejs.org/zh/config/#%E5%85%A8%E5%B1%80-cli-%E9%85%8D%E7%BD%AE
 目录
 
 * √ 配置多环境变量
@@ -27,3 +29,7 @@
 * √ 添加 IE 兼容
 * √ 静态资源自动打包上传阿里 oss、华为 obs
 * √ 完整依赖
+
+
+测试项目地址在：
+https://github.com/harryYao/v2cli4
