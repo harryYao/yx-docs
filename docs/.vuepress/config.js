@@ -35,6 +35,7 @@ module.exports = {
         collapsable: false,
         children: [
           'articles/window.name',
+          'articles/图片盗链',
           'questions/跨域',
           'questions/http协议',
           'questions/https介绍',
