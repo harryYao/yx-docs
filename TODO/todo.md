@@ -12,6 +12,10 @@
 9. FineBiWeb项目 markdown应用
 10. 帆软bss发布一些文章（boostrop提示框，表头点击切换排序）
 11. vue_reactive项目子定义工具集，test页面继续完成
+12. ES6 http://caibaojian.com/es6/
+13. 未必知道的css知识点 https://juejin.cn/post/6844903902123393032
+14. nodejs 里的 process.nextTick()
+15. js模块基础
 
 * DONE
 1. css选择器 体验测试完善
