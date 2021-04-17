@@ -3,16 +3,18 @@
 * TODO
 1. vue.config.js 配置，建vue-cli4项目练习
 2. 可视化研究，Echarts加深练习，计划需要实施和细化
-3. vite2 搞个demo
-4. react 系统学习 尚硅谷
-5. ES6 http://caibaojian.com/es6/
-6. 柯里化 
-7. 设计模式 
-8.  nodejs 里的 process.nextTick()
-9.  js模块基础 
-10. 自定义工具, 新增简单的时间类方法，还可以参考lodash, 扩展一些方法
-11. VUE3项目优化 private -> public
-12. 开发自定义的mini-charts (BIG PROJECT)
+3. 开发自定义的mini-charts (BIG PROJECT)
+4. vite2 搞个demo
+5. react 系统学习 尚硅谷
+6. ES6 http://caibaojian.com/es6/
+7. 柯里化 
+8. 设计模式 
+9.  nodejs 里的 process.nextTick()
+10. js模块基础 
+11. 作用域作用域链 还未完成 
+12. 自定义工具, promise 方法还没写完
+13. 自定义工具, 新增简单的时间类方法，还可以参考lodash, 扩展一些方法
+14. VUE3项目优化 private -> public
 
 
 * DOING
