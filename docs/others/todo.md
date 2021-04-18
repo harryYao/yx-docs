@@ -15,6 +15,7 @@
 12. 自定义工具, promise 方法还没写完
 13. 自定义工具, 新增简单的时间类方法，还可以参考lodash, 扩展一些方法
 14. VUE3项目优化 private -> public
+15. 位运算 >>
 
 
 * DOING
@@ -22,6 +23,7 @@
 2. Svelte 项目 my-snapper init完成
 3. 自定义工具库的代码优化，测试用例优化
 4. js继承 完善
+5. 十大经典排序算法汇总，冒泡
 
 * DONE
 1. FineBiWeb项目 markdown应用
