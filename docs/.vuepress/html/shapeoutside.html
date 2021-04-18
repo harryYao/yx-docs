@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      width: 600px;
+    }
+    .c1 {
+      width: 200px;
+      height: 200px;
+      float: left;
+      background-color: rgb(101, 101, 185);
+
+      border: 1px solid #dedee3;
+      border-radius: 50%;
+      shape-outside: circle();
+      margin: 20px;
+      
+      /* margin: 50px;
+      shape-outside: border-box; */
+    }
+  </style>
+</head>
+<body>
+  <div class="c1"></div>
+  <div class="c2">
+    child1.__proto__也就是Child.prototype，也就是Object.create(Parent.prototype)，这个空对象它的__proto__指向的就是我们想要的父类的原型对象，所以child1就能使用Parent.prototype上的方法了。
+而通过Object.create(null)创建的对象呢？哇，这可真的是空的不能再空了，因为我们创建它的时候传递的参数是null，也就是将它的__proto__属性设置为null，那它就相当于是没有原型链了，连Object.prototype上的方法它都不能用了(比如toString()、hasOwnProperty())
+再来看看new Object()，这个其实很好理解了，Object本身就是一个构造函数，就像Parent、Child这种，只不过它的原型对象是我们常用的Object.prototype。
+  </div>
+</body>
+</html>
