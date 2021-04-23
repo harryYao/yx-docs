@@ -40,7 +40,7 @@ npm install -g anywhere
 anywhere 8888 
 ```
 
-3. http-serve
+3. http-server
 ```js
 npm install http-server -g
 http-server
