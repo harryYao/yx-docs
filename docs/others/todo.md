@@ -1,29 +1,29 @@
 ## 近期的一些学习列表
 
 * TODO
-1. vue.config.js 配置，建vue-cli4项目练习
-2. 可视化研究，Echarts加深练习，计划需要实施和细化
-3. 开发自定义的mini-charts (BIG PROJECT)
-4. vite2 搞个demo
-5. react 系统学习 尚硅谷
-6. ES6 http://caibaojian.com/es6/
-7. 柯里化 
-8. 设计模式 
-9.  nodejs 里的 process.nextTick()
-10. js模块基础 
-11. 作用域作用域链 还未完成 
-12. 自定义工具, promise 方法还没写完
-13. 自定义工具, 新增简单的时间类方法，还可以参考lodash, 扩展一些方法
-14. VUE3项目优化 private -> public
-15. 位运算 >>
+1. 可视化研究，Echarts加深练习，计划需要实施和细化
+2. 开发自定义的mini-charts (BIG PROJECT)
+3. vite2 搞个demo
+4. react 系统学习 尚硅谷
+5. ES6 http://caibaojian.com/es6/
+6. 柯里化 
+7. 设计模式 
+8.  nodejs 里的 process.nextTick()
+9.  js模块基础 
+10. 作用域作用域链 还未完成 
+11. 自定义工具, promise 方法还没写完
+12. 自定义工具, 新增简单的时间类方法，还可以参考lodash, 扩展一些方法
+13. VUE3项目优化 private -> public
+14. 位运算 >>
 
 
 * DOING
-1. 未必知道的css知识点 https://juejin.cn/post/6844903902123393032
-2. Svelte 项目 my-snapper init完成
-3. 自定义工具库的代码优化，测试用例优化
-4. js继承 完善
-5. 十大经典排序算法汇总，冒泡
+1.  vue.config.js 配置，建vue-cli4项目练习
+2. 未必知道的css知识点 https://juejin.cn/post/6844903902123393032
+3. Svelte 项目 my-snapper init完成
+4. 自定义工具库的代码优化，测试用例优化
+5. js继承 完善
+6. 十大经典排序算法汇总，冒泡
 
 * DONE
 1. FineBiWeb项目 markdown应用
