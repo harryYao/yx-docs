@@ -1,7 +1,7 @@
 
-## HTTP协议
+# HTTP协议
 
-### HTTP的五大特点
+## HTTP的五大特点
 
 1. 支持客户/服务器模式。
 2. 简单快速：客户向服务器请求服务时，只需传送请求方法和路径。请求方法常用的有GET、HEAD、POST。每种方法规定了客户与服务器联系的类型不同。由于HTTP协议简单，使得HTTP服务器的程序规模小，因而通信速度很快。
@@ -14,13 +14,13 @@
 > 在实际的应用中，客户端往往会发出一系列请求，接着服务器端对每个请求进行响应。对于这些请求|响应，如果每次都经过一个单独的TCP连接发送，称为非持久连接。反之，如果每次都经过相同的TCP连接进行发送，称为持久连接。
 
 
-### HTTP之请求消息Request
+## HTTP之请求消息Request
 
 客户端发送一个HTTP请求到服务器的请求消息包括以下格式：   
 请求行（request line）、请求头部（header）、空行和请求数据四个部分组成。   
 <img :src="$withBase('/imgs/http_request.jpg')" alt="foo" />
 
-#### Get 请求
+## Get 请求
 ``` yaml
 GET /562f25980001b1b106000338.jpg HTTP/1.1
 Host    img.mukewang.com
@@ -43,7 +43,7 @@ GET说明请求类型为GET,[/562f25980001b1b106000338.jpg]为要访问的资源
 + 第四部分：请求数据也叫主体，可以添加任意的其他数据。
 这个例子的请求数据为空。
 
-#### POST 请求
+## POST 请求
 ``` yaml
 POST / HTTP1.1
 Host:www.wrox.com
@@ -61,7 +61,7 @@ name=Professional%20Ajax&publisher=Wiley
 + 第四部分：请求数据，第八行。
 
 
-### HTTP之响应消息Response
+## HTTP之响应消息Response
 一般情况下，服务器接收并处理客户端发过来的请求后会返回一个HTTP的响应消息。   
 HTTP响应也由四个部分组成，分别是：状态行、消息报头、空行和响应正文。   
 <img :src="$withBase('/imgs/http_response.png')" alt="foo" />
@@ -91,7 +91,7 @@ Date:生成响应的日期和时间；Content-Type:指定了MIME类型的HTML(te
 空行后面的html部分为响应正文。
 
 
-### HTTP之状态码
+## HTTP之状态码
 
 状态代码有三位数字组成，第一个数字定义了响应的类别，共分五种类别:
 1xx：指示信息--表示请求已接收，继续处理
@@ -111,7 +111,7 @@ Date:生成响应的日期和时间；Content-Type:指定了MIME类型的HTML(te
 ```
 
 
-### HTTP工作原理
+## HTTP工作原理
 
 HTTP协议定义Web客户端如何从Web服务器请求Web页面，以及服务器如何把Web页面传送给客户端。HTTP协议采用了请求/响应模型。客户端向服务器发送一个请求报文，请求报文包含请求的方法、URL、协议版本、请求头部和请求数据。服务器以一个状态行作为响应，响应的内容包括协议的版本、成功或者错误代码、服务器信息、响应头部和响应数据。
 
@@ -142,7 +142,7 @@ Web服务器解析请求，定位请求资源。服务器将资源复本写到TC
 + 6、浏览器将该 html 文本并显示内容;
 
 
-### GET和POST请求的区别
+## GET和POST请求的区别
 
 1. GET提交的数据会放在URL之后，以?分割URL和传输数据，参数之间以&相连，如EditPosts.aspx?name=test1&id=123456. POST方法是把提交的数据放在HTTP包的Body中.
 

@@ -10,3 +10,5 @@
   Lighthouse 使用方式   
   目前官方提供了4种使用方式： - Chrome 开发者工具（DevTools） - Chrome 扩展 - Node CLI - Node Module   
   https://zhuanlan.zhihu.com/p/91365316
+4. https://caniuse.com/
+   浏览器 css 兼容性查询网站

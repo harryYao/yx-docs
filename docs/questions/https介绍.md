@@ -1,4 +1,4 @@
-## HTTPS介绍
+# HTTPS介绍
 
 HTTP 协议中没有加密机制,但可以通 过和 SSL(Secure Socket Layer, 安全套接层 )或 
 TLS(Transport Layer Security, 安全层传输协议)的组合使用,加密 HTTP 的通信内容。属于通信加密，即在整个通信线路中加密。
