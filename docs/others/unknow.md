@@ -17,3 +17,5 @@
   结合 xlsx.js + handsontable + echarts 可实现导入excel，编辑数据，生成echarts图表
 6. eva.js 淘宝前端动画框架开源
    https://github.com/eva-engine
+7. vercel 网站托管
+   https://i-tech.tech/iloveu/44d57db9.html
