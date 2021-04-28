@@ -14,8 +14,13 @@
    浏览器 css 兼容性查询网站
 5. handsontable 类似Excel一样显示和编辑列表数据的工具，js插件
    https://github.com/handsontable/handsontable
-  结合 xlsx.js + handsontable + echarts 可实现导入excel，编辑数据，生成echarts图表
+   结合 xlsx.js + handsontable + echarts 可实现导入excel，编辑数据，生成echarts图表
+   SpreadJS 行业标杆 类似Excel https://demo.grapecity.com.cn/spreadjs/SpreadJSTutorial/quickstart
+   LuckySheet、Handsontable、SpreadJS https://juejin.cn/post/6955998176549535758
 6. eva.js 淘宝前端动画框架开源
    https://github.com/eva-engine
 7. vercel 网站托管
    https://i-tech.tech/iloveu/44d57db9.html
+8. npm 命令行工具开发指南
+   https://juejin.cn/post/6956027274919411726
+   https://blog.csdn.net/weixin_34621309/article/details/112511263
