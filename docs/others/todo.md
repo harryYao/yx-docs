@@ -17,18 +17,18 @@
 14. GZIP的原理
 
 * DOING
-1. vue.config.js 配置，建vue-cli4项目练习
-2. 未必知道的css知识点 https://juejin.cn/post/6844903902123393032
-3. Svelte 项目 my-snapper init完成
-4. 自定义工具库的代码优化，测试用例优化
-5. js继承 完善
-6. 十大经典排序算法汇总，冒泡
+1. 未必知道的css知识点 https://juejin.cn/post/6844903902123393032
+2. 自定义工具库的代码优化，测试用例优化
+3. js继承 完善
+4. 十大经典排序算法汇总，冒泡
 
 * DONE
-1. 柯里化 
-2. FineBiWeb项目 markdown应用
-3. css选择器 体验测试完善
-4. 帆软bss发布一些文章（boostrop提示框，表头点击切换排序）
+1. Svelte 项目 my-svelte init完成
+2. vue.config.js 配置，建vue-cli4项目练习
+3. 柯里化 
+4. FineBiWeb项目 markdown应用
+5. css选择器 体验测试完善
+6. 帆软bss发布一些文章（boostrop提示框，表头点击切换排序）
 
 * RESOURCE LIST
 // blog 优质资源库
