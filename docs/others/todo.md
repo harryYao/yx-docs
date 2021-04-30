@@ -14,7 +14,7 @@
 11. 自定义工具, 新增简单的时间类方法，还可以参考lodash, 扩展一些方法
 12. VUE3项目优化 private -> public
 13. 位运算 >>
-
+14. GZIP的原理
 
 * DOING
 1. vue.config.js 配置，建vue-cli4项目练习

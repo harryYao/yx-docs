@@ -24,3 +24,6 @@
 8. npm 命令行工具开发指南
    https://juejin.cn/post/6956027274919411726
    https://blog.csdn.net/weixin_34621309/article/details/112511263
+9. vue inti 定制自己的vue模板
+   https://www.cnblogs.com/fuzhengyi/p/9087779.html
+10. 技术选型网站 https://openbase.com/ https://stackshare.io/
