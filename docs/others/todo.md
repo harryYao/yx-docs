@@ -14,7 +14,6 @@
 11. 自定义工具, 新增简单的时间类方法，还可以参考lodash, 扩展一些方法
 12. VUE3项目优化 private -> public
 13. 位运算 >>
-14. GZIP的原理
 
 * DOING
 1. 未必知道的css知识点 https://juejin.cn/post/6844903902123393032
@@ -29,6 +28,7 @@
 4. FineBiWeb项目 markdown应用
 5. css选择器 体验测试完善
 6. 帆软bss发布一些文章（boostrop提示框，表头点击切换排序）
+7. GZIP的原理
 
 * RESOURCE LIST
 // blog 优质资源库
