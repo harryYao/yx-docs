@@ -7,19 +7,19 @@
 4. react 系统学习 尚硅谷
 5. ES6 http://caibaojian.com/es6/
 6. 设计模式 
-7.  nodejs 里的 process.nextTick()
-8.  js模块基础 
-9.  作用域作用域链 还未完成 
-10. 自定义工具, promise 方法还没写完
-11. 自定义工具, 新增简单的时间类方法，还可以参考lodash, 扩展一些方法
-12. VUE3项目优化 private -> public
-13. 位运算 >>
+7.  js模块基础 
+8.  作用域作用域链 还未完成 
+9.  自定义工具, promise 方法还没写完
+10. 自定义工具, 新增简单的时间类方法，还可以参考lodash, 扩展一些方法
+11. VUE3项目优化 private -> public
+12. 位运算 >>
 
 * DOING
-1. 未必知道的css知识点 https://juejin.cn/post/6844903902123393032
-2. 自定义工具库的代码优化，测试用例优化
-3. js继承 完善
-4. 十大经典排序算法汇总，冒泡
+1. nodejs 里的 process.nextTick()
+2. 未必知道的css知识点 https://juejin.cn/post/6844903902123393032
+3. 自定义工具库的代码优化，测试用例优化
+4. js继承 完善
+5. 十大经典排序算法汇总，冒泡
 
 * DONE
 1. Svelte 项目 my-svelte init完成
