@@ -47,3 +47,6 @@ https://github.com/wushu0725/dingtalk-demo
 https://blog.csdn.net/BIGBIGBIGCAT/article/details/102659326?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_v2~rank_aggregation-6-102659326.pc_agg_rank_aggregation&utm_term=%E9%92%89%E9%92%89h5%E5%BE%AE%E5%BA%94%E7%94%A8vue&spm=1000.2123.3001.4430
 npm install dingtalk-jsapi --save
 
+
+# 帆软软件应用程序接口及开发指导文档
+http://dev.fanruan.com/jsdoc/#!/api/FR.ComboBoxEditor
