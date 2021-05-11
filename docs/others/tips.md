@@ -59,3 +59,7 @@ http-server -c-1 也可启动，表示在禁止缓存状况下启用
 
 2. ~波浪符号
 它会更新到当前次版本号（也就是中间的那位数字）中最新的版本。放到例子中就是："@vue/cli-service": "~4.4.0"，这个库会去匹配更新到4.4.x的最新版本，如果出了一个新的版本为5.3.0，则不会自动升级。
+
+
+## ES_Checker 浏览器检测类
+http://ruanyf.github.io/es-checker/index.cn.html
