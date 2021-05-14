@@ -12,8 +12,6 @@
 9.  自定义工具, promise 方法还没写完
 10. 自定义工具, 新增简单的时间类方法，还可以参考lodash, 扩展一些方法
 11. VUE3项目优化 private -> public
-12. 位运算 >>
-13. 在FineBIWeb项目中建立文档，记录FR的技巧和小代码
 
 * DOING
 1. nodejs 里的 process.nextTick()
@@ -21,6 +19,8 @@
 3. 自定义工具库的代码优化，测试用例优化
 4. js继承 完善
 5. 十大经典排序算法汇总，冒泡
+6. 位运算 >>
+7.  在FineBIWeb项目中建立文档，记录FR的技巧和小代码
 
 * DONE
 1. Svelte 项目 my-svelte init完成

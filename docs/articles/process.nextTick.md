@@ -26,13 +26,14 @@ console.log('main2')
 
 执行结果
 
-main
-promise
-main2
-process.nextTick1
-promise then
-setTimeout
-process.nextTick2
+main   // 宏任务
+promise  // 宏任务
+main2  // 宏任务
+process.nextTick1  // 微任务
+promise then  // 微任务
+setTimeout  // 宏任务2
+process.nextTick2 // 宏任务2下的微任务
+
 
 
 理解 process.nextTick() 参考文档：
