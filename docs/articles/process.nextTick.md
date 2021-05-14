@@ -35,7 +35,25 @@ setTimeout  // 宏任务2
 process.nextTick2 // 宏任务2下的微任务
 
 
+**rocess.nextTick()知识点**
+* process.nextTick()会将callback添加到”next tick queue“
+* ”next tick queue“会在当前JavaScript stack执行完成后，下一次event loop开始执行前按照FIFO出队
+* 如果递归调用process.nextTick()可能会导致一个无限循环，需要去适时终止递归。
+* process.nextTick()可用于控制代码执行顺序。保证方法在对象完成constructor后但是在I/O发生前调用。
+* process.nextTick()可完全异步化API。API要么100%同步要么100%异步是很重要的，可以通过process.nextTick()去达到这种保证
+
+
+----
 
 理解 process.nextTick() 参考文档：
+
+强大的异步专家process.nextTick()
+https://www.jianshu.com/p/5328c72279ff
+
  https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/
-  https://www.oschina.net/translate/understanding-process-next-tick?print
+ https://www.oschina.net/translate/understanding-process-next-tick?print
+
+
+
+## Process.nextTick 和 setImmediate 的区别？
+https://www.zhihu.com/question/23028843
