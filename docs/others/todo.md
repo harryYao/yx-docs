@@ -12,6 +12,7 @@
 9.  自定义工具, promise 方法还没写完
 10. 自定义工具, 新增简单的时间类方法，还可以参考lodash, 扩展一些方法
 11. VUE3项目优化 private -> public
+12. scss + pug的css编译环境学习复杂的css
 
 * DOING
 1. nodejs 里的 process.nextTick()
