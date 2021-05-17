@@ -15,13 +15,12 @@
 12. scss + pug的css编译环境学习复杂的css
 
 * DOING
-1. nodejs 里的 process.nextTick()
-2. 未必知道的css知识点 https://juejin.cn/post/6844903902123393032
-3. 自定义工具库的代码优化，测试用例优化
-4. js继承 完善
-5. 十大经典排序算法汇总，冒泡
-6. 位运算 >>
-7.  在FineBIWeb项目中建立文档，记录FR的技巧和小代码
+1. 未必知道的css知识点 https://juejin.cn/post/6844903902123393032
+2. 自定义工具库的代码优化，测试用例优化
+3. js继承 完善
+4. 十大经典排序算法汇总，冒泡
+5. 位运算 >>
+6.  在FineBIWeb项目中建立文档，记录FR的技巧和小代码
 
 * DONE
 1. Svelte 项目 my-svelte init完成
@@ -31,6 +30,7 @@
 5. css选择器 体验测试完善
 6. 帆软bss发布一些文章（boostrop提示框，表头点击切换排序）
 7. GZIP的原理
+8. nodejs 里的 process.nextTick()
 
 css特效
 https://blog.csdn.net/luo1831251387/article/details/113657124
