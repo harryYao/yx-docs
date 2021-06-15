@@ -33,4 +33,5 @@
    https://segmentfault.com/a/1190000023160081
 14. Velocity 是一个简单易用、高性能、功能丰富的轻量级JS动画库。它能和 jQuery 完美协作，并和$.animate()有相同的 API， 但它不依赖 jQuery，可单独使用。 
 15. https://a.singlediv.com/  css绘图的网站
+16. BFcache, 即back-forward cache，可称为“往返缓存”
 
