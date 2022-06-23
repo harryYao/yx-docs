@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue.util方法和属性 | 前端小记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="shortcut icon" type="image/x-icon" href="/yx-docs/favicon.ico">
+    <meta name="description" content="yaoxin的笔记文档">
+    
+    <link rel="preload" href="/yx-docs/assets/css/0.styles.f26e5750.css" as="style"><link rel="preload" href="/yx-docs/assets/js/app.5a460998.js" as="script"><link rel="preload" href="/yx-docs/assets/js/2.beed6d36.js" as="script"><link rel="preload" href="/yx-docs/assets/js/50.c1787f29.js" as="script"><link rel="prefetch" href="/yx-docs/assets/js/10.ef9da421.js"><link rel="prefetch" href="/yx-docs/assets/js/11.9b5392f0.js"><link rel="prefetch" href="/yx-docs/assets/js/12.709b7d3b.js"><link rel="prefetch" href="/yx-docs/assets/js/13.21ee67c2.js"><link rel="prefetch" href="/yx-docs/assets/js/14.3e877896.js"><link rel="prefetch" href="/yx-docs/assets/js/15.38c2c5fd.js"><link rel="prefetch" href="/yx-docs/assets/js/16.fc417a38.js"><link rel="prefetch" href="/yx-docs/assets/js/17.399b3d5f.js"><link rel="prefetch" href="/yx-docs/assets/js/18.e8b9f64e.js"><link rel="prefetch" href="/yx-docs/assets/js/19.bcba6736.js"><link rel="prefetch" href="/yx-docs/assets/js/20.ad22a0aa.js"><link rel="prefetch" href="/yx-docs/assets/js/21.abf37f07.js"><link rel="prefetch" href="/yx-docs/assets/js/22.15816c2d.js"><link rel="prefetch" href="/yx-docs/assets/js/23.3118e001.js"><link rel="prefetch" href="/yx-docs/assets/js/24.262d541f.js"><link rel="prefetch" href="/yx-docs/assets/js/25.d5d5b31f.js"><link rel="prefetch" href="/yx-docs/assets/js/26.f8ad1c03.js"><link rel="prefetch" href="/yx-docs/assets/js/27.563d7bf1.js"><link rel="prefetch" href="/yx-docs/assets/js/28.0d36fbb9.js"><link rel="prefetch" href="/yx-docs/assets/js/29.c181a55e.js"><link rel="prefetch" href="/yx-docs/assets/js/3.3cc5e67c.js"><link rel="prefetch" href="/yx-docs/assets/js/30.b10c9ca6.js"><link rel="prefetch" href="/yx-docs/assets/js/31.88aeca61.js"><link rel="prefetch" href="/yx-docs/assets/js/32.eea9e6c5.js"><link rel="prefetch" href="/yx-docs/assets/js/33.2053affe.js"><link rel="prefetch" href="/yx-docs/assets/js/34.1c109941.js"><link rel="prefetch" href="/yx-docs/assets/js/35.b38f3547.js"><link rel="prefetch" href="/yx-docs/assets/js/36.b65774cc.js"><link rel="prefetch" href="/yx-docs/assets/js/37.f0220103.js"><link rel="prefetch" href="/yx-docs/assets/js/38.ba52d01e.js"><link rel="prefetch" href="/yx-docs/assets/js/39.4600b9a1.js"><link rel="prefetch" href="/yx-docs/assets/js/4.8fdb6c92.js"><link rel="prefetch" href="/yx-docs/assets/js/40.d5f9b7fe.js"><link rel="prefetch" href="/yx-docs/assets/js/41.654e2c88.js"><link rel="prefetch" href="/yx-docs/assets/js/42.3259130c.js"><link rel="prefetch" href="/yx-docs/assets/js/43.1015a155.js"><link rel="prefetch" href="/yx-docs/assets/js/44.461a5dfe.js"><link rel="prefetch" href="/yx-docs/assets/js/45.eb84978a.js"><link rel="prefetch" href="/yx-docs/assets/js/46.baa40100.js"><link rel="prefetch" href="/yx-docs/assets/js/47.488253f5.js"><link rel="prefetch" href="/yx-docs/assets/js/48.8acdad8d.js"><link rel="prefetch" href="/yx-docs/assets/js/49.aa4d5576.js"><link rel="prefetch" href="/yx-docs/assets/js/5.29239ed8.js"><link rel="prefetch" href="/yx-docs/assets/js/51.937bb7f3.js"><link rel="prefetch" href="/yx-docs/assets/js/52.dd17becb.js"><link rel="prefetch" href="/yx-docs/assets/js/6.52d05a44.js"><link rel="prefetch" href="/yx-docs/assets/js/7.e52f16a3.js"><link rel="prefetch" href="/yx-docs/assets/js/8.887870a8.js"><link rel="prefetch" href="/yx-docs/assets/js/9.3c3db4fc.js">
+    <link rel="stylesheet" href="/yx-docs/assets/css/0.styles.f26e5750.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/yx-docs/" class="home-link router-link-active"><img src="/yx-docs/logo.png" alt="前端小记" class="logo"> <span class="site-name can-hide">前端小记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/harryYao" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GITHUB
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/harryYao" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GITHUB
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JS笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/yx-docs/js基础/01_js类型.html" class="sidebar-link">js基础类型</a></li><li><a href="/yx-docs/js基础/02_dom操作.html" class="sidebar-link">DOM操作</a></li><li><a href="/yx-docs/js基础/03_原型原型链.html" class="sidebar-link">原型 prototype</a></li><li><a href="/yx-docs/js基础/04_作用域作用域链.html" class="sidebar-link">作用域 &amp; 作用域链</a></li><li><a href="/yx-docs/js基础/05_闭包.html" class="sidebar-link">闭包 closure</a></li><li><a href="/yx-docs/js基础/06_继承.html" class="sidebar-link">继承</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/yx-docs/css基础/01_选择器.html" class="sidebar-link">css选择器</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>博客文章</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/yx-docs/articles/window.name.html" class="sidebar-link">window.name</a></li><li><a href="/yx-docs/articles/图片盗链.html" class="sidebar-link">图片盗链</a></li><li><a href="/yx-docs/questions/跨域.html" class="sidebar-link">何为跨域？</a></li><li><a href="/yx-docs/questions/http协议.html" class="sidebar-link">HTTP协议</a></li><li><a href="/yx-docs/questions/https介绍.html" class="sidebar-link">HTTPS介绍</a></li><li><a href="/yx-docs/questions/JS异步编程.html" class="sidebar-link">异步编程</a></li><li><a href="/yx-docs/questions/Event Loop是什么.html" class="sidebar-link">EVENT LOOP</a></li><li><a href="/yx-docs/questions/输入URL回车后的过程.html" class="sidebar-link">浏览器输入 URL 回车之后发生了什么</a></li><li><a href="/yx-docs/questions/onload.html" class="sidebar-link">window.onload() &amp; document.ready() 事件先后顺序</a></li><li><a href="/yx-docs/questions/会话技术.html" class="sidebar-link">会话技术(Cookie和Session)</a></li><li><a href="/yx-docs/questions/XSS CSRF 点击劫持攻击.html" class="sidebar-link">1. XSS攻击</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/yx-docs/vue/vue技巧大全.html" class="sidebar-link">VUE技巧大全</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-util方法和属性"><a href="#vue-util方法和属性" class="header-anchor">#</a> vue.util方法和属性</h1> <p>属性和方法：</p> <div class="language- extra-class"><pre><code>[&quot;defineReactive&quot;, &quot;_toString&quot;, &quot;toNumber&quot;, &quot;makeMap&quot;,
+&quot;isBuiltInTag&quot;, &quot;remove&quot;, &quot;hasOwn&quot;, &quot;isPrimitive&quot;,
+&quot;cached&quot;, &quot;camelize&quot;, &quot;capitalize&quot;, &quot;hyphenate&quot;,
+&quot;bind&quot;, &quot;toArray&quot;, &quot;extend&quot;, &quot;isObject&quot;,
+&quot;isPlainObject&quot;, &quot;toObject&quot;, &quot;noop&quot;, &quot;no&quot;,
+&quot;genStaticKeys&quot;, &quot;isReserved&quot;, &quot;def&quot;, &quot;parsePath&quot;,
+&quot;hasProto&quot;, &quot;inBrowser&quot;, &quot;devtools&quot;, &quot;UA&quot;, &quot;nextTick&quot;,
+&quot;_Set&quot;, &quot;mergeOptions&quot;, &quot;resolveAsset&quot;, &quot;warn&quot;,
+&quot;formatComponentName&quot;, &quot;validateProp&quot;]
+</code></pre></div><ol><li><p>defineReactive:定义一个对象的响应属性（core/observer/index.js）</p> <p>usage:
+Vue.util.defineReactive(obj,key,value,fn)</p> <div class="language- extra-class"><pre><code> obj: 目标对象，
+ key: 目标对象属性；
+ value: 属性值
+ fn: 只在node调试环境下set时调用
+</code></pre></div></li> <li><p>_toString : 字符串表示，与原生的toString()方法的区别：object和array使用JSON.stringify()处理，null输出''；(shared/util.js)</p> <p>usage:
+let person = {
+name : 'libai'
+}
+Vue.util._toString(person)</p></li> <li><p>toNumber: 转化为number类型，内部使用parseFloat；返回浮点数或者本身(shared/util.js)</p></li></ol> <p>usage:
+let size = '0.1$';
+Vue.util.toNumber(size)  //--0.1</p> <ol start="4"><li>makeMap: 生成一个Map对象实例，并返回检测key是否存在的函数；(shared/util.js)</li></ol> <p>usage:
+Vue.util.makeMap(str,toLowerCase);
+str : 生成map对象key键的字符串，以‘,’隔开
+toLowerCase: boolen是否小写</p> <div class="language- extra-class"><pre><code>let keys = 'name,age,job,email';
+let maps = Vue.util.makMap(keys);
+
+console.log(maps['name'])  //---true
+console.log(maps['phone'])  //--false
+</code></pre></div><ol start="5"><li><p>isBuiltInTag : makeMap('slot,component',true)执行结果(shared/util.js)</p> <p>usage:
+console.log(Vue.util.isBuiltInTag('slot')) //--true;</p> <div class="language- extra-class"><pre><code> console.log(Vue.util.isBuiltInTag('component')) //--true;
+ 
+ console.log(Vue.util.isBuiltInTag('transition')) //--false;
+</code></pre></div></li> <li><p>remove: 删除数组中的一个项(shared/util.js)</p> <p>usage:
+Vue.util.remove(array,item);</p> <div class="language- extra-class"><pre><code> let arr = ['libai','age'];
+ Vue.util.remove(arr,'libai');
+ console.log(arr)  //['age'];
+</code></pre></div></li> <li><p>hasOwn: 其实就是Object.hasOwnProperty(obj,key)的封装；(shared/util.js)</p> <p>usage:
+Vue.util.hasOwn(obj,key);</p> <div class="language- extra-class"><pre><code> let person ={
+         name : 'libai',
+         age : '100'
+ };
+ 
+ console.log(Vue.util.hasOwn('name')) //---true
+</code></pre></div></li> <li><p>isPrimitive : 检测是不是简单类型值：string,number；(shared/util.js)</p> <p>usage:
+Vue.util.isPrimitive(value);</p> <div class="language- extra-class"><pre><code> console.log(Vue.util.isPrimitive(12)) // --true
+</code></pre></div></li> <li><p>cached : 缓存函数执行的结果;将函数执行结果缓存在内部cache变量上，当第二次执行相同参数时，直接返回缓存结果(shared/util.js)</p> <p>usage :
+Vue.util.cached(fn);</p> <p>实例：
+var camelizeRE = /-(\w)/g;
+var camelize =  Vue.util.cached(function (str) {
+return str.replace(camelizeRE, function (_, c) {
+return c ? c.toUpperCase() : '';
+});
+});</p> <p>let str = 'person-name-age';
+let ret = camelize(str);
+let ret1 = camelize(str);  //--此时取缓存值</p> <p>console.log(ret,ret1)</p></li> <li><p>camelize : 驼峰写法，使用了cached方式缓存结果；(shared/util.js)</p> <p>usage:
+Vue.util.camelize(str)；</p> <p>example:
+let str = 'person-name-age';
+let ret = Vue.util.camelize(str);
+console.log(ret) //personNameAge;</p></li> <li><p>hyphenate: 驼峰写法转化为连接符'-'写法：(shared/util.js)</p> <p>usage:
+Vue.util.camelize(str);</p> <p>example:</p> <div class="language- extra-class"><pre><code>let name = 'personNameAge';
+let ret = Vue.util.hyphenate(name);
+
+console.log(ret) //--输出person-name-age
+</code></pre></div></li> <li><p>bind: 绑定函数作用域，(shared/util.js)</p> <p>usage:
+Vue.util.bind(fn,ctx)</p> <p>example:
+var name = 'dufu';
+var name1 = 'libai'
+var person = { name1 };</p> <div class="language- extra-class"><pre><code>var fn = Vue.util.bind(test,person);
+test() //dufu
+fn()   //libai
+
+function test(){
+    console.log(this.name)
+}
+</code></pre></div></li> <li><p>toArray: 将类数组转化为数组(shared/util.js)</p> <p>usage:
+window.util.toArray(likeArray,start)
+likeArray: 类数组对象；
+start: 开始位置</p> <p>example:
+let divs = document.querySelectorAll('div');
+let arr = Vue.util.toArray(divs,0);</p></li> <li><p>extend: 浅复制(shared/util.js)</p> <p>usage:
+Vue.util.extend(to,form);
+to : 目标对象
+form： 源对象</p> <p>example:</p> <div class="language- extra-class"><pre><code>let person ={
+        name: 'libai',
+        age : 100
+};
+
+let cloneObj = Vue.util.extend({},person);
+console.loh(cloneObj)
+</code></pre></div></li> <li><p>isObject ： 检测是不是对象和null;(shared/util.js)</p> <p>usage:
+Vue.util.isObject(obj);</p> <p>example:
+Vue.util.isObject(null)  //true</p></li> <li><p>isPlainObject : 检测是不是object对象，(shared/util.js)</p> <p>usage:
+Vue.util.isPlainObject(obj);</p> <p>example:
+Vue.util.isPlainObject(null)  //false
+Vue.util.isPlainObject({}) //true</p></li> <li><p>toObject : 将对象数组合并为一个对象；后面的属性覆盖前面的属性(shared/util.js)</p> <p>usage:
+Vue.util.toObject(arr);
+arr : 对象数组；</p> <p>example:
+let name='libai',age=100
+let names = {name };
+let ages = {age}</p> <div class="language- extra-class"><pre><code>let ret = Vue.util.toObject([names,ages]);
+
+console.log(ret) //{name:'libai',age:100}
+</code></pre></div></li></ol> <p>一些简单工具函数：(shared/util.js)</p> <div class="language- extra-class"><pre><code>noop : 纯函数；= function(){}
+no : 返回false函数；=&gt; false
+</code></pre></div><ol start="18"><li><p>genStaticKeys: 链接staticKeys合并成一个字符串(shared/util.js)</p> <p>usage:
+Vue.util.genStaticKeys(modules)
+modules: 对象数组，包含staticKeys数组字段；</p> <p>example:</p> <div class="language- extra-class"><pre><code>let keys1 = ['name','age'];
+let keys2 = ['job','email','phone'];
+
+let module1 = {
+        staticKeys:keys1
+}
+
+let module2 = {
+        staticKeys:keys2
+};
+
+Vue.util.genStaticKeys([module1,module2]);
+
+//--输出：'name,age,job,email,phone'
+</code></pre></div></li> <li><p>isReserved: 判断字符串是不是$和_符开始的:用来过滤vm的方法和属性 (core/util/lang.js);</p> <p>usage:
+Vue.util.isReserved(str);</p> <p>example:
+let str = '$name';
+let str1 = '_age';
+let str2= 'normal';</p> <div class="language- extra-class"><pre><code>Vue.util.isReserved(str) //true
+Vue.util.isReserved(str1)  //true
+Vue.util.isReserved(str2)  //false
+</code></pre></div></li> <li><p>def : 其实就是Object.defineProperty()方法的简便封装；</p> <p>usage:
+Vue.util.def(obj,key,value,enumerable)
+enumerable: 是否可枚举；</p> <p>example:
+let target = Object.create({});
+Vue.util.def(target,'name','libai',true);</p> <div class="language- extra-class"><pre><code>console.log(target) //---{name:'libai'}
+</code></pre></div></li> <li><p>parsePath: 解析路径</p> <p>usage:
+Vue.util.parsePath(str)
+str : 'vue.core.util';</p> <p>example:
+let pathname = 'vue.core.util';
+let paths = {
+vue:{
+core:{
+util:['index.js','util.js','lang.js']
+}<br>
+}
+};</p> <div class="language- extra-class"><pre><code>let parse = Vue.util.parsePath(pathname); 
+let ret = parse(paths)
+console.log(ret) //['index.js','util.js','lang.js']
+</code></pre></div></li> <li><p>hasProto : 是否可以使用__proto__属性；</p> <p>usage:
+Vue.util.hasProto; //true or false</p></li> <li><p>inBrowser : 是否是浏览器环境</p> <p>usage:
+Vue.util.isBrowser //--true or false</p></li> <li><p>devtools: 浏览器环境是否安装vue-devtools工具</p> <p>usage:
+Vue.util.devtools //true or false</p></li> <li><p>UA : 浏览器用户代理navigator.userAgent.toLowerCase()</p> <p>usage:
+Vue.util.UA //--string</p></li> <li><p>nextTick : 延迟到下有一次执行：使用最新的window.MutationObserver对象；回退使用setTimeout方法；</p> <p>usage :
+Vue.util.nextTick(fn,ctx);</p> <p>example:
+let name = 'libai';
+let person = {name};</p> <div class="language- extra-class"><pre><code>Vue.util.nextTick(function(){console.log(this.name)},person);
+console.log('dufu');
+</code></pre></div></li> <li><p>_Set: 兼容es6中的Set数据结构；只提供了add,has,clear三个方法</p> <p>usage:
+let set = new Vue.util._Set();
+set.add(1);
+set.has(1);
+set.clear();</p> <p>es6中还包含有delete,keys,values,entries,forEach,size等方法和属性；</p></li> <li><p>warn: 输出警告信息：(core/util/debug.js)</p> <p>usage:
+Vue.util.warn(message,vm);
+message： 输出信息
+vm: 取得vm.name，告之警告信息是来源于那个组件</p> <p>example:
+let message = 'text warn';
+let name='vue';
+Vue.util.warn(message,{name});</p> <div class="language- extra-class"><pre><code>'vue.js:2250 [Vue warn]: text warn (found in component &lt;vue&gt;)'
+</code></pre></div></li> <li><p>formatComponentName:格式化组件名称,(core/util/debug.js)</p> <p>usage:
+Vue.util.formatComponentName(vm);
+1: 'root instance'
+2: 'component &lt;${name}&gt;'
+3: 'anonymous component'</p> <p>example:
+let name = 'libai';
+let vm = {name}</p> <div class="language- extra-class"><pre><code>Vue.util.formatComponentName(vm)
+
+//--component &lt;libai&gt;</code></pre></div></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/yx-docs/assets/js/app.5a460998.js" defer></script><script src="/yx-docs/assets/js/2.beed6d36.js" defer></script><script src="/yx-docs/assets/js/50.c1787f29.js" defer></script>
+  </body>
+</html>
